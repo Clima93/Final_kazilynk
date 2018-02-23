@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}KaziLynk | Something went wrong{% endblock %}
+
+{% block content %}
+<div class="col-md-12 col-sm-12 col-xs-12">
+	<div class="hidden-xs col-md-1 col-sm-1"></div>
+	<div class="col-md-10 col-sm-10 col-xs-12 margin-bottom-20">
+		<h3>Something went wrong</h3>
+		<p>We detected a request to post a new {% block intent %}job{% endblock %} but you're user type is: "<span class="light-blue">{% block user_type %}{{ profile.category }}{% endblock %}</span>" and only a <span class="error-message">{% block desired_user %}Employer{% endblock %}</span> can post a {% block intent2 %}job{% endblock %}. If you feel this is an error please contact <a href="mailto:support@kazilynk.com">support@kazilynk.com</a> or change user type here</a></p>
+	</div>
+</div>
+{% endblock %}
+
