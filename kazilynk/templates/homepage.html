@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load staticfiles %}
 
 {% block title %}KaziLynk Homepage{% endblock %}
 
@@ -11,8 +11,8 @@
 {% block extra_js %}
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
-	<script type="text/javascript" src="/static/js/jquery.cookie.min.js"></script>
-	<script type="text/javascript" src="/static/js/home-script.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.cookie.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/home-script.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -48,7 +48,7 @@
 			
 		</div>
 		<div class="col-md-2 hidden-sm hidden-xs"></div>
-		<img class="img-responsive main-img" src="/static/img/homepage-img.jpg" style="width: 100%;"/>
+		<img class="img-responsive main-img" src="{% static 'img/homepage-img.jpg' %}" style="width: 100%;"/>
 
 		<div class="visible-xs hidden-sm hidden-md hidden-lg mobile-search">
 			<input class="form-control search-box remove-absolute search-mobile" placeholder="Type Keyword ex. sales">

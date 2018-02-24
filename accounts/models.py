@@ -18,7 +18,9 @@ from django.conf import settings
 from_email = settings.EMAIL_HOST_USER
 regisration_admins = settings.REGISTRATION_ADMINS
 
+
 #from mailchimp3 import MailChimp
+
 
 
 class Link(models.Model):
